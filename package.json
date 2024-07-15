@@ -1,0 +1,14 @@
+{
+  "name": "react-mono",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:test1": "pnpm --filter test1 dev",
+    "dev:test2": "pnpm --filter test2 dev",
+    "test:all": "pnpm -r test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
