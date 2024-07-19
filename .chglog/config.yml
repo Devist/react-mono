@@ -1,0 +1,42 @@
+style: bitbucket
+template: CHANGELOG.tpl.md
+info:
+  title: CHANGELOG
+  repository_url: https://bit.ssgadm.com/projects/WEB/repos/ssg-mssgmall-reactapp
+options:
+  tag_filter_pattern: "^(v\\d{2}.\\d{2}.\\d{2})"
+  sort: semver
+
+  commits:
+    filters:
+      Type:
+        - feat
+        - fix
+        - chore
+        - test
+        - refactor
+        - style
+  commit_groups:
+    group_by: Scope
+    title_maps:
+      ~ : Other
+      feat: Features
+      fix: Bug Fixes
+    #   perf: Performance Improvements
+    #   refactor: Code Refactoring
+
+  header:
+    pattern: "^(?:(\\w*))\\:\\s(?:\\[([A-Za-z]+-\\d{1,})\\]\\s?)?(.*)$"
+    pattern_maps:
+      - Type
+      - Scope
+      - Subject
+
+  merges:
+    pattern: "^Pull request\\s#(\\d+):\\s(.+)$"
+    pattern_maps:
+      - Ref
+      - Source
+  notes:
+    keywords:
+      - BREAKING CHANGE

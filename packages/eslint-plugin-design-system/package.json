@@ -1,0 +1,9 @@
+{
+  "name": "@ssg/eslint-plugin-design-system",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "peerDependencies": {
+    "eslint": "8.57.0"
+  }
+}

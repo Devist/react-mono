@@ -1,0 +1,48 @@
+{
+  "name": "@ssg/ui-lib",
+  "private": true,
+  "version": "0.0.0",
+  "module": "dist/index.mjs.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup --target es5",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint-fix": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0 --fix",
+    "preview": "vite preview",
+    "clean": "rimraf ./dist"
+  },
+  "dependencies": {
+    "@chakra-ui/icons": "^2.1.1",
+    "@chakra-ui/react": "^2.8.2",
+    "@chakra-ui/styled-system": "^2.9.2",
+    "@chakra-ui/system": "^2.6.2",
+    "@chakra-ui/theme-tools": "^2.1.2",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "framer-motion": "^10.16.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "virtua": "^0.33.2"
+  },
+  "devDependencies": {
+    "@ssg/eslint-config-bases": "workspace:^",
+    "@storybook/react": "^7.6.19",
+    "@types/node": "^16.18.96",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.0.0",
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "rimraf": "^3.0.2",
+    "tsup": "^7.3.0",
+    "typescript": "5.2.2",
+    "vite": "^4.5.3",
+    "vitest": "^0.32.4"
+  },
+  "peerDependencies": {
+    "next": "^13.5.4"
+  }
+}

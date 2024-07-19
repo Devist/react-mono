@@ -1,0 +1,52 @@
+{
+  "name": "@ssg/eslint-config-bases",
+  "main": "./src/index.js",
+  "private": true,
+  "exports": {
+    ".": {
+      "require": "./src/index.js"
+    },
+    "./patch/modern-module-resolution": {
+      "require": "./src/patch/modern-module-resolution.js"
+    },
+    "./helpers": {
+      "require": "./src/helpers/index.js"
+    },
+    "./prettier": {
+      "require": "./src/bases/prettier.js"
+    },
+    "./react": {
+      "require": "./src/bases/react.js"
+    },
+    "./jest": {
+      "require": "./src/bases/jest.js"
+    },
+    "./typescript": {
+      "require": "./src/bases/typescript.js"
+    },
+    "./storybook": {
+      "require": "./src/bases/storybook.js"
+    },
+    "./tanstack-query": {
+      "require": "./src/bases/tanstack-query.js"
+    }
+  },
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.10.2",
+    "@ssg/eslint-plugin-design-system": "workspace:^",
+    "@tanstack/eslint-plugin-query": "^4.38.0",
+    "@types/node": "^16.18.96",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-storybook": "^0.8.0",
+    "prettier": "^3.2.5"
+  },
+  "peerDependencies": {
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5"
+  }
+}

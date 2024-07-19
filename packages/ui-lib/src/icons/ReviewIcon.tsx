@@ -1,0 +1,19 @@
+import { createIcon } from './utils/createIcon';
+
+export const ReviewIcon = createIcon({
+  displayName: 'ReviewIcon',
+  path: [
+    <path d="M7.19951 7.20038H14.9995V8.40037H7.19951V7.20038Z" fill="currentColor" />,
+    <path
+      d="M7.19741 11.3722L7.20173 10.1722L15.0018 10.2003L14.9975 11.4002L7.19741 11.3722Z"
+      fill="currentColor"
+    />,
+    <path d="M7.19951 13.2004H11.0397V14.4004H7.19951V13.2004Z" fill="currentColor" />,
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M20.2185 7.32218L23.1792 10.1992L18.5996 14.6792V21.0004H3.59961V3.06018H18.5996V8.90338L20.2185 7.32218ZM19.2219 12.3911L17.9991 11.168L13.0794 15.973V17.1601H14.3468L19.2219 12.3911ZM20.2208 8.99808L21.4601 10.2016L20.0796 11.552L18.8575 10.3296L20.2208 8.99808ZM4.79953 19.8007H17.3995V15.8535L14.8366 18.3606H11.8794V15.4672L17.3995 10.0758V4.26052H4.79953V19.8007Z"
+      fill="currentColor"
+    />,
+  ],
+});

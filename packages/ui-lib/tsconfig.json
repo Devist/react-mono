@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "target": "esnext",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "module": "ESNext",
+    "jsx": "react-jsx",
+    "noEmit": false,
+    "incremental": true,
+    "isolatedModules": true,
+    "moduleResolution": "Node",
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "noImplicitAny": false, // 암시적으로 any타입으로 대체한다.
+    "paths": {
+      "@ssg/utils/*": ["../../../packages/utils/src/*"]
+    },
+    "outDir": "./dist"
+  },
+  "include": [".eslintrc.*", "**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx", "**/*.cjs", "**/*.mjs"],
+  "exclude": ["**/node_modules", "**/.*/", "dist", "build"]
+}

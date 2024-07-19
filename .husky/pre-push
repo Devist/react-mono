@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+branchPath=$(git symbolic-ref --short HEAD)
+
+if [[ $branchPath =~ ^(release)\/.*\/(qa|dev|stg)$ ]]; then
+    # release 브랜치에서 zone이 dev, qa, stg인 경우 lint 및 typecheck 안함
+    echo 'Skip lint/typecheck'
+    exit 0
+fi
+
+yarn concurrently --kill-others-on-fail -n lint,typecheck "yarn g:lint" "yarn g:typecheck"
